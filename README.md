@@ -58,12 +58,12 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement delete function in Subscriber repository.`
     -   [x] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -90,5 +90,16 @@ Menggunakan DashMap akan lebih baik jika jika **id** pada **Product** dan **url*
 Penggunaan DashMap tetap diperlukan untuk memastikan keamanan threading, dan penggunaan Singleton pattern juga diperlukan untuk memastikan hanya ada satu instance dari daftar subscriber yang dapat diakses oleh banyak thread. Kombinasi dari keduanya akan memastikan keamanan threading dan konsistensi data.
 
 #### Reflection Publisher-2
+1. In the Model-View Controller (MVC) compound pattern, there is no “Service” and “Repository”. Model in MVC covers both data storage and business logic. Explain based on your understanding of design principles, why we need to separate “Service” and “Repository” from a Model?
+
+Memisahkan "Service" dan "Repository" dari Model dilakukan untuk mencapai prinsip Separation of Concerns dalam SOLID Principle. Dengan memisahkan fungsionalitas, kita dapat membuat kode yang lebih fleksibel dan mudah dikelola. Repository bertanggung jawab atas penyimpanan dan akses data, sedangkan Service mengelola logika bisnis. Hal ini membantu menciptakan kode yang lebih terorganisir, mudah dipahami, dan mudah dikelola (maintainable).
+
+2. What happens if we only use the Model? Explain your imagination on how the interactions between each model (**Program, Subscriber, Notification**) affect the code complexity for each model?
+
+Jika hanya menggunakan Model, kode masih dapat berfungsi tetapi kompleksitasnya akan meningkat. Interaksi antar model seperti Program, Subscriber, dan Notification akan terjalin dalam satu entitas, menyebabkan kode menjadi sulit dipahami dan dipelihara. Hal ini dapat membuat kode tidak terstruktur dan sulit dikelola.
+
+3. Have you explored more about **Postman**? Tell us how this tool helps you to test your current work. You might want to also list which features in Postman you are interested in or feel like it is helpful to help your Group Project or any of your future software engineering projects.
+
+Saya sudah pernah mencoba Postman pada perkuliahan Pemrograman Berbasis Platform pada semester lalu. Postman merupakan alat yang sangat berguna untuk menguji dan mengelola HTTP request dan response. Fitur-fitur seperti pengiriman request dengan body dan parameter, serta pengujian keberhasilan response sangat membantu dalam menguji fungsionalitas endpoint dan integrasi antar sistem. Postman dapat digunakan untuk menguji API endpoints dan memastikan kepatuhan fungsionalitas.
 
 #### Reflection Publisher-3
