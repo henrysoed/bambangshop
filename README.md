@@ -103,3 +103,4 @@ Jika hanya menggunakan Model, kode masih dapat berfungsi tetapi kompleksitasnya 
 Saya sudah pernah mencoba Postman pada perkuliahan Pemrograman Berbasis Platform pada semester lalu. Postman merupakan alat yang sangat berguna untuk menguji dan mengelola HTTP request dan response. Fitur-fitur seperti pengiriman request dengan body dan parameter, serta pengujian keberhasilan response sangat membantu dalam menguji fungsionalitas endpoint dan integrasi antar sistem. Postman dapat digunakan untuk menguji API endpoints dan memastikan kepatuhan fungsionalitas.
 
 #### Reflection Publisher-3
+
